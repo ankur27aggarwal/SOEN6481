@@ -1,0 +1,99 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+
+%\usepackage{fontspec}
+%\usepackage[utf8]{inputenc}
+%\setmainfont{Futura}[ItalicFont={Futura Italic}]
+
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0.5,1}
+\definecolor{colString}{rgb}{0.6,0.1,0.1}
+
+\lstset{%configuration de listings
+float=hbp,
+basicstyle=\ttfamily\small, 
+identifierstyle=\color{colIdentifier}, 
+keywordstyle=\color{colKeys}, 
+stringstyle=\color{colString}, 
+commentstyle=\color{colComments}, 
+columns=flexible, 
+tabsize=2, 
+%frame=trBL, 
+frameround=tttt, 
+extendedchars=true, 
+showspaces=false, 
+showstringspaces=false, 
+numbers=left, 
+numberstyle=\tiny, 
+breaklines=true, 
+breakautoindent=true, 
+captionpos=b,
+xrightmargin= 1cm, 
+xleftmargin= 1cm
+} 
+\lstset{language=c++}
+\lstset{commentstyle=\textit}
+
+
+\parskip 5pt plus 2pt minus 2pt
+\textwidth=14cm
+\oddsidemargin=1cm
+\evensidemargin=1cm
+\topmargin=-0.5cm
+\headheight=0cm
+\headsep=1cm
+\textheight=23cm
+\parindent=1.5cm
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\fbox{\large\bf Brief description of Gaussian Integral and its characteristics that make it unique }
+\end{center}
+\bigskip
+
+
+\section*{1. INTRODUCTION}
+
+\noindent 1.1) What is a Guassian Integral?
+The Gaussian integral, which is also known as the Euler Poisson integral, is the integral of the Gaussian function $e^{-x2}$ over the entire real line . It is named after the German mathematician Carl Friedrich Gauss. The integral is:
+\begin{equation}
+ \displaystyle{ \int_{ -\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}} 
+\end{equation}
+The Gaussian integral, is  probability integral and closely related to the erf function, it is the integral of the one-dimensional Gaussian function over $(-\infty,\infty)$. It can be computed using the trick of combining two one-dimensional Gaussians
+
+\noindent 1.2) How it can be proved ?
+The Gaussain integral can be proved in many ways (Polar coordinates,Another differentiation under integral sign,A volume integral,Asymptotic estimates,Stirling$^{'}$s formula etc..).
+\section*{2. Some Characteristics of Gaussian Integral}
+
+\noindent 2.1.0) The Guassian integral appears in many situation in mathematics and statistics and has a wide range of application . Gaussian integral is exactly the the reason why the factor ${\frac{1}{2\pi}}$ is require in the normalization (Gaussian Distribution) of all the probabilities . 
+
+\noindent 2.1.1) With a slight change of variables it is used to compute the normalizing constant of the normal distribution 
+
+
+
+\noindent 2.1.2) The same integral with finite limits is closely related to both the error function and the cumulative distribution function of the normal distribution
+
+
+\noindent 2.1.3) Used for choosing an appropriate coordinate system to describe the given volume V or surface S
+
+\noindent 2.1.4) Finding the limits on the integrals in this system in terms of the variables of integration chosen
+
+\noindent 2.1.5) Expressing the integrand and volume element dV or surface element dS in terms of the differentials of the chosen variable
+
+\section*{3. Why Gaussian distribution is important}
+\noindent The Gaussian distribution or normal distribution sometimes informallycalled as $"$Bell curve$"$ is the most important countinuos distribution in probability and it has a wide range of applications.The normal distribution is important because of its $"$ Central Limit Theorem$"$.The four main characteristics of a normal distribution are symmetric,unimodal,and asymptotic,and the mean,median,and mode are all equal.
+ 
+\end{document}
+
+
+
+
+
